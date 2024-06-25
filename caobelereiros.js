@@ -66,7 +66,7 @@ function cadastrarPet(){
 
 function listarHorarios() {
 	if (pets.length === 0) {
-		console.log('\nNenhum pet adicionado ainda!')
+		console.log('\nNenhum pet cadastrado ainda!')
 		exibirMenu()
 	} else {
 		console.log('\nLista de pets cadastrados:')
@@ -103,13 +103,25 @@ function editarHorarios() {
 
 		rl.question('Digite o número do cadastro que deseja editar: ', (numero) => {
 			if(numero > 0 && numero <= pets.length){
-				rl.question('Digite o novo horário: ', (horario) => {
-							pets[numero - 1] = {
-								horario
-							}
-							console.log('\nEditado com sucesso!')
-							exibirMenu()
-						})
+				rl.question('Digite o nome do pet: ', (nomeDoPet) => {
+                    rl.question('Digite o nome do dono: ', (nomeDoDono) => {
+                        rl.question('Digite a raça: ', (raca) => {
+                            rl.question('Digite o tipo de serviço: ', (servico) => {
+                                rl.question('Digite o novo horário: ', (horario) => {
+                                    pets[numero - 1] = {
+                                        nomeDoPet,
+                                        nomeDoDono,
+                                        raca,
+                                        servico,
+                                        horario
+                                    }
+                                    console.log('\nEditado com sucesso!')
+                                    exibirMenu()
+                                })
+                                })
+                            })
+                        })
+                    })
 				} else {
 					console.log('\nNúmero inválido, tente novamente.')
 					exibirMenu()
