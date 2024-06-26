@@ -50,8 +50,14 @@ function cadastrarPet(){
 			rl.question('Digite a raça do pet: ', (raca) => {
 				rl.question('Digite o tipo de serviço: ', (servico) => {
 					rl.question('Digite o horario: ', (horario) => {
-						pets.push({nomeDoDono:nomeDoDono, nomeDoPet:nomeDoPet, raca:raca, 
-							servico:servico, horario:horario, concluido:false})
+						pets.push({
+							nomeDoDono:nomeDoDono,
+							nomeDoPet:nomeDoPet,
+							raca:raca, 
+							servico:servico,
+							horario:horario,
+							concluido: 'Pendente'
+						})
 							console.log('\nPet adicionado com sucesso!')
 							exibirMenu()
 					})
@@ -138,11 +144,11 @@ function marcarPresenca() {
 	} else {
 		console.log('\nLista de pets cadastrados: ')
 		pets.forEach((pet, index) => {
-			console.log(`${index + 1}. ${pets.nomeDoPet}`)
+			console.log(`${index + 1}. ${pet.nomeDoPet}`)
 		})
 		rl.question('Digite o número do pet que você deseja marcar presença: ', (numero) => {
 			if (numero > 0 && numero <= pets.length) {
-				pets[numero-1].concluido = true
+				pets[numero-1].concluido = 'Concluido'
 			}
 			console.log("\nPresença registrada com sucesso!")
 			exibirMenu()
