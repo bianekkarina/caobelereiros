@@ -72,7 +72,7 @@ node caobelereiros.js
 
 Após iniciar o programa, o menu será exibido:
 
-```node.js
+```bash
 Bem Vindo ao Cãobelereiros! Escolha uma opção:
 1. Cadastrar Pet
 2. Listar horários marcados
@@ -83,7 +83,7 @@ Bem Vindo ao Cãobelereiros! Escolha uma opção:
 **Passo 3: Cadastrar um pet**
 
 Escolhemos a opção '1' para cadastrar um novo pet:
-```node.js
+```bash
 Escolha uma opção: 1
 
 Digite o nome do dono(a) do pet: Ana
@@ -93,7 +93,7 @@ Digite o tipo de serviço: Banho e Tosa
 Digite o horário: 10:00
 ```
 O programa confirma o cadastro: 
-```node.js
+```bash
 Pet adicionado com sucesso!
 
 Bem Vindo ao Cãobelereiros! Escolha uma opção:
@@ -104,7 +104,7 @@ Bem Vindo ao Cãobelereiros! Escolha uma opção:
 5. Sair
 ```
 **Passo 4: Listar horários marcados**
-```node.js
+```bash
 Escolha uma opção: 2
 
 Lista de pets cadastrados:
@@ -127,7 +127,7 @@ Bem Vindo ao Cãobelereiros! Escolha uma opção:
 **Passo 5: Editar horários**
 
 Vamos editar o horário do pet Rex escolhendo a opção '3':
-``` node.js
+``` bash
 Escolha uma opção: 3
 
 Lista de pets cadastrados:
@@ -159,7 +159,7 @@ Bem Vindo ao Cãobelereiros! Escolha uma opção:
 
 Escolha a opção '4' para marcar o serviço como concluído para o pet Rex:
 
-``` node.js
+``` bash
 Escolha uma opção: 4
 
 Lista de pets cadastrados:
@@ -180,7 +180,7 @@ Bem Vindo ao Cãobelereiros! Escolha uma opção:
 
 Finalmente, escolha a opção '5' para encerrar o programa:
 
-``` node.js
+``` bash
 Escolha uma opção: 5
 Até mais, aumigo! :)
 ```
